@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace xamarin_listings
+namespace xamarin_listings.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MasterPage : ContentPage
     {
-        public MainPage()
+        public MasterPage()
         {
             InitializeComponent();
+            BindingContext = new MasterPageViewModel();
         }
     }
 }
