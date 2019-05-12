@@ -70,7 +70,7 @@
         <AndroidResource Include="Resources\values\colors.xml"/>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\xamarin_listings\xamarin_listings.csproj">
+        <ProjectReference Include="..\xamarin-listings\xamarin-listings.csproj">
             <Project>{BD340804-FE0A-48AB-B776-CC319061CAFB}</Project>
             <Name>xamarin_listings</Name>
         </ProjectReference>
