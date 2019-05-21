@@ -9,6 +9,7 @@
             <Label Text="{Binding Announcement.Title}"/>
             <Label Text="{Binding Announcement.Description}"/>
             <Label Text="{Binding Announcement.Price}"/>
+            <Button Text="Contacter le vendeur"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
