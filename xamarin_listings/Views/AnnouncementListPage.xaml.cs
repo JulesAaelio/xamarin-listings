@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using xamarin_listings.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,16 @@ namespace xamarin_listings.Views
         public AnnouncementListPage()
         {
             InitializeComponent();
+            BindingContext = new AnnouncementListPageViewModel();
+        }
+
+        private void ListViewMenu_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as Announcement;
+            if (item != null)
+            {
+                Navigation.PushAsync(new AnnouncementDetail(item));
+            }
         }
     }
 }

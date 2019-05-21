@@ -16,6 +16,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Page Include="Views\AnnouncementDetail.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </Page>
       <Page Include="Views\AnnouncementListPage.xaml">
         <SubType>Designer</SubType>
         <Generator></Generator>
