@@ -10,5 +10,6 @@ namespace xamarin_listings.Services
         [Get("/5ce3a2593100008400742770")]
 //        [Get("/announcements")]
         Task<Announcement_API> GetAnnouncements();
+        
     }
 }

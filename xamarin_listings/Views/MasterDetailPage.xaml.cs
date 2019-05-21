@@ -35,6 +35,9 @@ namespace xamarin_listings.Views
                     case MenuItemType.AnnouncementsList:
                         target = new AnnouncementListPage();
                         break;
+                    case MenuItemType.AnnouncementDeposit:
+                        target = new AnnouncementDepositPage();
+                        break;
                 }
 
                 if (target != null)

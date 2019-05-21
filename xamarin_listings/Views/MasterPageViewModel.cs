@@ -13,7 +13,8 @@ namespace xamarin_listings.Views
         {
             this.MenuItems = new List<MenuItem>
             {
-                new MenuItem {Id = MenuItemType.AnnouncementsList, Title= "Toutes les annonces", Enabled = true}
+                new MenuItem {Id = MenuItemType.AnnouncementsList, Title= "Toutes les annonces", Enabled = true},
+                new MenuItem {Id = MenuItemType.AnnouncementDeposit, Title= "Créer une annonce", Enabled = true}
             };
            
         }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_listings.Views.AnnouncementDepositPage"
+            Title="Déposer une annonce">
+    <ContentPage.Content>
+        <StackLayout>
+           
+            <Label Text="Titre :"/>
+            <Entry Text="{Binding Titre}"/>
+
+            <Label Text="Description :"/>
+            <Entry Text="{Binding Description}"/>
+
+            <Label Text="Prix :"/>
+            <Entry Text="{Binding Prix}"/>
+
+            <Button Text="Créer l'annonce"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
