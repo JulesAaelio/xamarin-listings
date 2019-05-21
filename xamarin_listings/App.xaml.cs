@@ -1,4 +1,5 @@
 ﻿using System;
+using xamarin_listings.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +13,7 @@ namespace xamarin_listings
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new xamarin_listings.Views.MasterDetailPage();
         }
 
         protected override void OnStart()

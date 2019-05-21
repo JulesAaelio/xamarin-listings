@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin-listings", "xamarin-listings\xamarin-listings.csproj", "{1BFF68B9-47EC-423A-8209-7FA4120CA28C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin_listings", "xamarin_listings\xamarin_listings.csproj", "{1BFF68B9-47EC-423A-8209-7FA4120CA28C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin-listings.Android", "xamarin-listings.Android\xamarin-listings.Android.csproj", "{952C78B0-94C7-474C-A4BD-CA8A1E8DA907}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin_listings.Android", "xamarin_listings.Android\xamarin_listings.Android.csproj", "{952C78B0-94C7-474C-A4BD-CA8A1E8DA907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin-listings.iOS", "xamarin-listings.iOS\xamarin-listings.iOS.csproj", "{275EB581-35E3-4386-8F15-CCDE9D8F030B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin_listings.iOS", "xamarin_listings.iOS\xamarin_listings.iOS.csproj", "{275EB581-35E3-4386-8F15-CCDE9D8F030B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
