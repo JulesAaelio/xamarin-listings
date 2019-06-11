@@ -7,9 +7,9 @@ namespace xamarin_listings.Services
 {
     public interface IListingAPI
     {
-        [Get("/5ce3a2593100008400742770")]
-//        [Get("/announcements")]
-        Task<Announcement_API> GetAnnouncements();
+//        [Get("/5ce3a2593100008400742770")]
+        [Get("/announcement")]
+        Task<List<Announcement>> GetAnnouncements();
         
     }
 }

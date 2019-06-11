@@ -26,10 +26,7 @@ namespace xamarin_listings.Views
         async void Load()
         {
             var response = await ListingAPIService.Instance.GetAnnouncements();
-            if (Boolean.Parse(response.Success))
-            {
-                Announcements = response.Announcements;
-            }
+            Announcements = response;
 
         }
     }
