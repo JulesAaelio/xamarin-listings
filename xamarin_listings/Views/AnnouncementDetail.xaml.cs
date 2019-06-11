@@ -17,5 +17,10 @@ namespace xamarin_listings.Views
             InitializeComponent();
             BindingContext = new AnnouncementDetailViewModel(announcement);
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactSellerPage((BindingContext as AnnouncementDetailViewModel).Announcement));
+        }
     }
 }
