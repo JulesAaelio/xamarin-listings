@@ -14,10 +14,13 @@ namespace xamarin_listings.Models
         public string Description { get; set; }
 
         [JsonProperty("category_id")]
-        public string CategoryId { get; set; }
+        public double CategoryId { get; set; }
+        
+        [JsonProperty("category")]
+        public Category Category { get; set; }
 
         [JsonProperty("price")]
-        public double Price { get; set; }
+        public float Price { get; set; }
 
         [JsonProperty("user_id")]
         public string UserId { get; set; }

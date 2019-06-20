@@ -10,9 +10,16 @@ namespace xamarin_listings.Services
 //        [Get("/5ce3a2593100008400742770")]
         [Get("/announcement")]
         Task<List<Announcement>> GetAnnouncements();
+        
+        [Get("/categories")]
+        Task<List<Category>> GetCategories();
 
         [Post("/auth")]
         Task<Token_API> Login([Body] Credentials credentials);
+        
+        [Post("/announcement")]
+        [Headers("Authorization: Bearer")]
+        Task<Announcement> PostAnnouncement([Body] Announcement announcement);
 
     }
 }

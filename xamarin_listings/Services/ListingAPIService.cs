@@ -1,3 +1,5 @@
+using System;
+using System.Net.Http;
 using Refit;
 
 namespace xamarin_listings.Services
@@ -15,7 +17,8 @@ namespace xamarin_listings.Services
             {
                 if (_listingApi == null)
                 {
-                    _listingApi = RestService.For<IListingAPI>(_hostUrl);
+//                    _listingApi = RestService.For<IListingAPI>(_hostUrl);
+                    _listingApi = RestService.For<IListingAPI>(new HttpClient(new AuthenticatedHttpClientHandler()){BaseAddress = new Uri(_hostUrl)});
                 }
                 return _listingApi;
             }
