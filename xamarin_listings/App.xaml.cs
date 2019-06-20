@@ -13,7 +13,8 @@ namespace xamarin_listings
         {
             InitializeComponent();
 
-            MainPage = new xamarin_listings.Views.MasterDetailPage();
+            MainPage = new Login();
+//            MainPage = new xamarin_listings.Views.MasterDetailPage();
         }
 
         protected override void OnStart()
