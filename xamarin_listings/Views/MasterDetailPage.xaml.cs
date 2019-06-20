@@ -33,16 +33,19 @@ namespace xamarin_listings.Views
                 switch (item.Id)
                 {
                     case MenuItemType.AnnouncementsList:
-                        target = new AnnouncementListPage();
+                        target = new NavigationPage(new AnnouncementListPage());
                         break;
                     case MenuItemType.AnnouncementDeposit:
-                        target = new AnnouncementDepositPage();
+                        target = new NavigationPage(new AnnouncementDepositPage());
+                        break;
+                    case MenuItemType.Messages:
+                        target = new MessageTabbedPage();
                         break;
                 }
 
                 if (target != null)
                 {
-                    Detail = new NavigationPage(target);
+                    Detail = target;
                 }
                 IsPresented = false;
             }

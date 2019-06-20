@@ -37,5 +37,13 @@
         <SubType>Designer</SubType>
         <Generator></Generator>
       </Page>
+      <Page Include="Views\MessagePage.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </Page>
+      <Page Include="Views\MessageTabbedPage.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </Page>
     </ItemGroup>
 </Project>

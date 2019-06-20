@@ -5,8 +5,8 @@
              Title="Toutes les annonces">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
-            <ListView x:Name="ListViewMenu"
-                      HasUnevenRows="True"
+                     <ListView x:Name="ListViewMenu"
+                               HasUnevenRows="True"
                       ItemSelected="ListViewMenu_OnItemSelected"
                       ItemsSource="{Binding Announcements}">
                 <ListView.ItemTemplate>

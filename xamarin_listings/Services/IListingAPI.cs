@@ -20,6 +20,16 @@ namespace xamarin_listings.Services
         [Post("/announcement")]
         [Headers("Authorization: Bearer")]
         Task<Announcement> PostAnnouncement([Body] Announcement announcement);
+        
+        [Get("/messages/received")]
+        [Headers("Authorization: Bearer")]
+        Task<List<Message>> GetReceivedMessages();
+        
+        [Get("/messages/sent")]
+        [Headers("Authorization: Bearer")]
+        Task<List<Message>> GetSentMessages();
+
+        
 
     }
 }

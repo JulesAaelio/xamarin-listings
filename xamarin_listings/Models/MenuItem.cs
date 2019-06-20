@@ -3,6 +3,7 @@ namespace xamarin_listings.Models
     public enum MenuItemType {
         AnnouncementsList,
         AnnouncementDeposit,
+        Messages,
         AnnouncementReceivedMessages,
         AnnouncementSentMessages
     }
