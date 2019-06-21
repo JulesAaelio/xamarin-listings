@@ -6,6 +6,7 @@
              Title="{Binding Announcement.Title}">
     <ContentPage.Content>
         <StackLayout>
+            <Image Source="{Binding Announcement.Picture}" />
             <Label Text="{Binding Announcement.Title}"/>
             <Label Text="{Binding Announcement.Description}"/>
             <Label Text="{Binding Announcement.Price}"/>

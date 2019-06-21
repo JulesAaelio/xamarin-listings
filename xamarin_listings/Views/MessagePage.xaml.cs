@@ -17,7 +17,6 @@ namespace xamarin_listings.Views
         {
             InitializeComponent();
             this.ReceivedMessageMode = receivedMessagesMode;
-            Console.WriteLine((this.ReceivedMessageMode));
             BindingContext = new MessagePageViewModel(this.ReceivedMessageMode);
         }
     }

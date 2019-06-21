@@ -11,14 +11,15 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
-                                <Label Text="{Binding Content}" 
-                                       FontSize="20"/>
-                                <Label Text="{Binding Announcement.Title}" 
-                                       FontSize="20"/>
-                                <Label Text="{Binding User.Lastname}" 
-                                       FontSize="20"/>
-                            </Grid>
+                            <Frame Style="{StaticResource AnnouncementFrame}">
+                                <StackLayout>
+                                    <Label Style="{StaticResource Title}"
+                                        Text="{Binding Announcement.Title}" 
+                                           FontSize="20"/>
+                                    <Label Text="{Binding Content}" 
+                                           FontSize="20"/>
+                                </StackLayout>
+                                </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

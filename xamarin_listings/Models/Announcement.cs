@@ -24,5 +24,8 @@ namespace xamarin_listings.Models
 
         [JsonProperty("user_id")]
         public string UserId { get; set; }
+        
+        [JsonProperty("picture")]
+        public string Picture { get; set; }
     }
 }
