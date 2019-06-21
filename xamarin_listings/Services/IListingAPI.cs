@@ -29,7 +29,8 @@ namespace xamarin_listings.Services
         [Headers("Authorization: Bearer")]
         Task<List<Message>> GetSentMessages();
 
-        
-
+        [Post("/messages")]
+        [Headers("Authorization: Bearer")]
+        Task<Announcement> PostMessage([Body] MessageApi message);
     }
 }

@@ -9,11 +9,9 @@
             <Label Text="{Binding Announcement.Title}"/>
             <Label Text="{Binding Announcement.Price}"/>
             <Label Text="Votre message"/>
-            <Editor Placeholder="Bonjour ! Votre annonce m'intérèsse"
+            <Editor Text="{Binding Content}" Placeholder="Bonjour ! Votre annonce m'intérèsse"
                     HeightRequest="200" />
-            <Button Text="ENVOYER"></Button>
-
-
+            <Button Text="Envoyer" Command="{Binding SendMessageCommand}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

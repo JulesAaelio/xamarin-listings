@@ -20,7 +20,7 @@ namespace xamarin_listings.Views
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ContactSellerPage((BindingContext as AnnouncementDetailViewModel).Announcement));
+            Navigation.PushModalAsync(new ContactSellerPage((BindingContext as AnnouncementDetailViewModel).Announcement));
         }
     }
 }

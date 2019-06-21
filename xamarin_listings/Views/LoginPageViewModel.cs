@@ -17,6 +17,8 @@ namespace xamarin_listings.Views
         public ICommand LoginCommand { get; set; }
         public LoginPageViewModel()
         {
+            this.Email = SettingsService.Email;
+            this.Password = SettingsService.Pwd;
             this.LoginCommand = new Command(
                 execute: () =>
                 {
