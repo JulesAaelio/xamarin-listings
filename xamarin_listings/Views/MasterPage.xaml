@@ -5,6 +5,9 @@
              x:Class="xamarin_listings.Views.MasterPage"
              Title="Whatever">
     <StackLayout VerticalOptions="FillAndExpand">
+        <StackLayout>
+            <Label Text="{Binding Username}"></Label>
+        </StackLayout>
         <ListView x:Name="ListViewMenu"
                   HasUnevenRows="True"
                   ItemSelected="OnMenuItemSelected"

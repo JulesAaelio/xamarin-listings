@@ -2,7 +2,9 @@
 using xamarin_listings.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 namespace xamarin_listings
@@ -13,11 +15,15 @@ namespace xamarin_listings
         {
             InitializeComponent();
 
-            MainPage = new xamarin_listings.Views.MasterDetailPage();
+            MainPage = new Login();
+//            MainPage = new xamarin_listings.Views.MasterDetailPage();
         }
+        
+        
 
         protected override void OnStart()
         {
+            AppCenter.Start("android=f10a272c-0308-4fea-91ee-a529ab3f22cb;", typeof(Analytics), typeof(Crashes));
             // Handle when your app starts
         }
 
