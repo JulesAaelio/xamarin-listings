@@ -1,4 +1,4 @@
-# xamarin_listings 
+# listings 
 [![Build status](https://build.appcenter.ms/v0.1/apps/d56468d4-1a22-4e65-b72b-a35618bfe681/branches/master/badge)](https://appcenter.ms)
 
 ## Students
