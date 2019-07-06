@@ -49,8 +49,8 @@ namespace xamarin_listings.Views
             };
 
             Announcement response = await ListingAPIService.Instance.PostAnnouncement(announcement);
+            Application.Current.MainPage = new MasterDetailPage();
         }
-      
         
         async void Load()
         {
